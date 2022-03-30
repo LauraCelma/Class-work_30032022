@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         task1();
     }
 
@@ -13,19 +13,23 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input temperature:");
         int temperature = scanner.nextInt();
-        if (temperature >=80)
+        if (temperature >95 || temperature <20)
+        {
+            System.out.println("Wisit our shop");
+        }
+        else if (temperature >=80)
         {
             System.out.println("Go to swimming");
         }
-        else if ( temperature >=60 && temperature <80)
+        else if ( temperature >=60)
         {
             System.out.println("Play tennis");
         }
-        else if (temperature >=40 && temperature <60)
+        else if (temperature >=40)
         {
             System.out.println("Play golf");
         }
-        else if (temperature <40)
+        else
         {
             System.out.println("Go to skii");
         }
